@@ -25,7 +25,7 @@
         </action>
 
         <action path="/rechercher"
-                type="com.uit.couchepresentation.presentation.RechEtudiant"
+                type="com.uit.presentation.RechEtudiant"
                 name="etudiantForm"
                 scope="request"
                 validate="false">
@@ -34,7 +34,7 @@
         </action>
 
         <action path="/supprimer"
-                type="com.uit.couchepresentation.presentation.SupEtudiant"
+                type="com.uit.presentation.SuppEtudiant"
                 name="etudiantForm"
                 scope="request"
                 validate="false">

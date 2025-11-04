@@ -1,4 +1,4 @@
-package com.uit.couchepresentation;
+package com.uit;
 
 import java.io.*;
 

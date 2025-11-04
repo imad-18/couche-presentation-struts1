@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+        "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+
+
+    <form-beans>
+
+        <form-bean name="etudiantForm"
+                   type="com.uit.presentation.EtudiantForm"/>
+    </form-beans>
+
+
+    <action-mappings>
+
+        <action path="/ajouter"
+                type="com.uit.presentation.AjoutEtudiant"
+                name="etudiantForm"
+                scope="request"
+                validate="false">
+            <forward name="success" path="/vues/accueil.jsp"/>
+            <forward name="error" path="/vues/accueil.jsp"/>
+        </action>
+
+        <action path="/rechercher"
+                type="com.uit.couchepresentation.presentation.RechEtudiant"
+                name="etudiantForm"
+                scope="request"
+                validate="false">
+            <forward name="success" path="/vues/accueil.jsp"/>
+            <forward name="error" path="/vues/accueil.jsp"/>
+        </action>
+
+        <action path="/supprimer"
+                type="com.uit.couchepresentation.presentation.SupEtudiant"
+                name="etudiantForm"
+                scope="request"
+                validate="false">
+            <forward name="success" path="/vues/accueil.jsp"/>
+            <forward name="error" path="/vues/accueil.jsp"/>
+        </action>
+
+    </action-mappings>
+
+
+    <message-resources parameter="ApplicationResources"/>
+
+</struts-config>
